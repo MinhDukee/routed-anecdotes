@@ -87,9 +87,9 @@ const CreateNew = (props) => {
   const author = useField('text')
   const info = useField('text')
   const navigate = useNavigate()
-  const { authorreset, ...authorProps } = author
-  const { contentreset, ...contentProps } = content
-  const { inforeset, ...infoProps } = info
+  const { reset: authorreset, ...authorProps } = author
+  const { reset: contentreset, ...contentProps } = content
+  const { reset: inforeset, ...infoProps } = info
 
   const handleSubmit = (e) => {
     e.preventDefault()
